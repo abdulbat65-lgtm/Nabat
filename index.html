@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Fit Hub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            z-index: 1000;
+        }
+
+        nav h1 {
+            color: #e63946;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 50px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+            url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1") center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: #e63946;
+        }
+
+        /* STATS */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-box {
+            background: #1c1c1c;
+            padding: 30px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* ABOUT */
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .team img {
+            width: 180px;
+            border-radius: 10px;
+        }
+
+        .values {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .value {
+            background: #1c1c1c;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #444;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background: #e63946;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .map {
+            background: #333;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>Smart Fit Hub</h1>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#program">Program</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div>
+        <h2>TRAIN SMART, LIVE STRONG</h2>
+        <p>Smart Training • Healthy Lifestyle • Strong Community</p>
+    </div>
+</section>
+
+<!-- QUICK STATS -->
+<section>
+    <div class="stats">
+        <div class="stat-box">
+            <h3>2</h3>
+            <p>Cabang</p>
+        </div>
+        <div class="stat-box">
+            <h3>3000+</h3>
+            <p>Member</p>
+        </div>
+        <div class="stat-box">
+            <h3>4.9 ⭐</h3>
+            <p>Rating</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        <strong>Company Story</strong><br>
+        Smart Fit Hub berdiri untuk membantu setiap individu mencapai gaya hidup sehat
+        melalui pendekatan latihan yang cerdas, terstruktur, dan berkelanjutan.
+    </p>
+
+    <p>
+        <strong>Visi:</strong> Menjadi pusat kebugaran modern berbasis komunitas.<br>
+        <strong>Misi:</strong> Memberikan pelatihan berkualitas, fasilitas modern,
+        dan pelatih profesional.
+    </p>
+
+    <h3>Our Team</h3>
+    <div class="team">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+        <img src="https://images.unsplash.com/photo-1594737625785-c8b6c1b18e22">
+    </div>
+
+    <h3>Our Values</h3>
+    <div class="values">
+        <div class="value">Disiplin</div>
+        <div class="value">Konsisten</div>
+        <div class="value">Healthy Lifestyle</div>
+        <div class="value">Community</div>
+    </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program">
+    <h2>Program & Services</h2>
+
+    <table>
+        <tr>
+            <th>Program</th>
+            <th>Durasi</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>Nabats</td>
+            <td>60 Menit</td>
+            <td>Rp150.000</td>
+        </tr>
+        <tr>
+            <td>HIIT</td>
+            <td>45 Menit</td>
+            <td>Rp175.000</td>
+        </tr>
+        <tr>
+            <td>Personal Training</td>
+            <td>60 Menit</td>
+            <td>Rp350.000</td>
+        </tr>
+    </table>
+
+    <p><strong>Signature Program:</strong> Smart Transformation 12 Weeks</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact & Location</h2>
+
+    <div class="contact-box">
+        <div class="info-box">
+            <h3>Cabang 1</h3>
+            <p>Jl. Sudirman No. 88, Jakarta</p>
+            <div class="map">Map Placeholder</div>
+        </div>
+
+        <div class="info-box">
+            <h3>Cabang 2</h3>
+            <p>Jl. Diponegoro No. 45, Bandung</p>
+            <div class="map">Map Placeholder</div>
+        </div>
+
+        <div class="info-box">
+            <h3>Info Kontak</h3>
+            <p>Email: smartfithub@email.com</p>
+            <p>Telp: 0812-3456-7890</p>
+            <p>Instagram: @smartfithub</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Smart Fit Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
